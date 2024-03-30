@@ -1,0 +1,282 @@
+@font-face {
+    font-family: myFont;
+    src: url(Asset/font.ttf);
+}/* My font */
+body{
+    font-family: myFont;
+}
+/* Menu Bar Start */
+.close_img{
+    display: none;
+}
+.manue_bar_logo{
+    display: none;
+}  
+#check{
+    display: none;
+}
+.manue_bar_logo{
+    float: right;
+    cursor: pointer;
+}
+.manue_bar_logo img{
+    display: block;
+    width: 40px;
+    height: 20px;
+}
+.manue_bar_child_two{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.row{
+    margin: 0 !important;
+}.manue_bar_child_one_logo{
+    display: flex;
+    justify-content: center;
+}.manue_bar_child_one_logo img{
+ cursor: pointer;
+ max-width: 100px;
+}.manu_bar{
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+}.manue_bar_child_two ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 5px 1px 2px 3px;
+}.manue_bar_child_two nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.671);
+    font-weight: 500;
+    transition: .5s;
+}.manue_bar_child_two nav ul li a:hover{
+    color: #f94144;
+}
+/* Menu Bar End */
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* Header section Start */
+.header{
+    margin: 0;
+    padding: 0;
+
+}.hader_img{
+    padding: 0;
+}.hader_img img{
+    display: flex;
+      width: 100%;
+    object-fit: contain;
+}.heder_post_child{
+    background-color: #0d1b2a;
+    color: #F2B45D;
+    padding: 0 14px;
+    height: 520px;
+}.heder_post_child{
+    display: grid;
+}.heder_posts{
+    color: rgb(255, 255, 255);
+}.hader_post{
+    padding:0 0 0 12px !important;
+}
+.hader_inner_text{
+    padding: 20px;  
+}
+.header_inner_text_one{
+    color:#0d1b2a;
+    display: flex;
+    justify-content: center;
+}.header_inner_text_one h1{
+    font-weight: 800;
+    font-family:myFont ;
+    width: 250px;
+}.header_inner_text_two p{
+    color: rgba(0, 0, 0, 0.671);
+    font-family: myFont;
+}.header_inner_text_two button{
+    padding: 5px 20px;
+    background-color: #0d1b2a;
+    color: white;
+    font-weight: 200;
+    border:none;
+    transition: 0.5s;
+}
+.header_inner_text_two button:hover{
+    background: #f94144;
+}
+/* Header section End */
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+/* Section Start */
+.post_section{
+    display: flex;
+}
+.post_section_parent{
+    padding:40px 0;    
+}.post_section h2{
+    color: rgba(102, 100, 100, 0.671);
+}.post_section h5:hover{
+    color:#f94144;
+}.post_section h5{
+    font-weight: 800; 
+    transition: 0.5s;
+    cursor: pointer;
+}.post_section p{
+    color: rgba(0, 0, 0, 0.671);
+}
+.post_section img{
+    display: block;
+    width: 110px;
+    padding-right: 10px;
+}/* Section End */
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=- */
+/* Resonsive Design start */
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+}
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+.manue_bar_logo{
+  display: none;
+}    
+}
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.manue_bar_child_one_logo {
+  justify-content: flex-start;
+}.manue_bar_logo{
+  display: none;
+}.manue_bar_logo{
+  display: block;
+}.nav{
+  display: none;
+} 
+.manue_bar_child_two ul {
+    display: block;
+    justify-content: flex-end;
+    background: rgb(199, 186, 186);
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 10px;
+    margin: 0;
+    height:250px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    position: relative;
+    transition: .5s;}
+    .close_img{
+        display: block;
+        width: 40px;
+    }
+.close_img img{
+    display: block;
+    width: 10px;
+}
+};
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .nav{
+      display: none;
+     }.hader_post {
+      padding: 0 0 0 0 !important;
+  }.manue_bar_logo{
+      display: block;
+  };
+  .manue_bar_child_two ul {
+    display: block;
+    justify-content: flex-end;
+    background: rgb(199, 186, 186);
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 10px;
+    margin: 0;
+    height:250px;
+   width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    position: relative;
+    transition: .5s;}
+    .close_img{
+        display: block;
+        width: 40px;
+    }
+.close_img img{
+    display: block;
+    width: 10px;
+}
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .nav{
+      display: none;
+     } 
+     .hader_post {
+      padding: 0 0 0 0 !important;
+  }
+  .manue_bar_logo{
+      display: block;
+  }
+  .manue_bar_child_two ul {
+    display: block;
+    justify-content: flex-end;
+    background: rgb(199, 186, 186);
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 10px;
+    margin: 0;
+    height:250px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    position: relative;
+    transition: .5s;}
+    .close_img{
+        display: block;
+        width: 40px;
+    }
+.close_img img{
+    display: block;
+    width: 10px;
+}
+}
+
+/* Resonsive Design End */

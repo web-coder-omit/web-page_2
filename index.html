@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--My CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+   <!--Body Start-->
+        <!--Menu Bar Start-->
+            <div class="manu_bar row">
+                <div class="manue_bar_child_one col col-lg-3 col-md-6 col-xs-12 col-6">
+                    <div class="manue_bar_child_one_logo">
+                        <img src="Asset/logo.svg" alt="Logo">
+                    </div>
+                </div>
+                <div class="manue_bar_child_two col col-lg-9 col-md-6 col-xs-12 col-6">
+                    <nav class="nav">
+                      <ul>
+                        <img onclick="cl()" class="close_img" src="Asset/download.png" alt="">
+                        <br>
+                          <!-- <li ></li> -->
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">New</a></li>
+                          <li><a href="#">Popular</a></li>
+                          <li><a href="#">Trending</a></li>
+                          <li><a href="#">Catagories</a></li>   
+                        </ul>
+                    </nav>
+                    <div class="manue_bar_logo">
+                        <img onclick="showSidebar()" src="Asset/icon-menu.svg" alt="">
+                    </div>  
+                </div>  
+            </div>
+        <!--Menu Bar End-->
+        <!-- Header section Start -->
+            <header class="header row">
+                <div class="hader_img col col-lg-8 col-md-6 col-xs-12 col-12">
+                    <div class="header_imgs">
+                        <img src="Asset/image-web-3-desktop.jpg" alt="Image">
+                    </div>
+                    
+
+                    <div class="hader_inner_text row">
+                        <div class="header_inner_text_one col col-lg-6 col-md-12 col-xs-12 col-12">
+                            <h1>The Bright
+                                Future of 
+                                Web 3.0?
+                            </h1>
+                        </div>
+                        <div class="header_inner_text_two col col-lg-6 col-md-12 col-xs-12 col-12">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae laudantium quam eum exercitationem. Cupiditate. Lorem ipsum dolor sit amet.</p>    
+                            <button>READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hader_post col col-lg-4 col-md-6 col-xs-12 col-12">
+                    <div class="heder_post_child">
+                        <h2>New</h2>
+                        <div class="heder_posts">
+                            <h5>Hydrogen Vs Electric Cars</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, asperiores?</p>
+                            <hr>
+                        </div>
+                        <div class="heder_posts">
+                            <h5>Hydrogen Vs Electric Cars</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, asperiores?</p>
+                            <hr>
+                        </div>
+                        <div class="heder_posts">
+                            <h5>Hydrogen Vs Electric Cars</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, asperiores?</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </header>
+        <!-- Header section End -->
+        <!-- Section Start -->
+        <section class="post_section_parent row">
+            <div class="post_section col col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12">
+                <div class="inner_post_img">
+                    <img src="Asset/image-retro-pcs.jpg" alt="img">
+                </div>
+                <div class="inner_post_text">
+                    <h2>01</h2>
+                    <h5>Revlving Retro PCs</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, culpa.</p>
+                </div>
+            </div>
+            <div class="post_section col col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12">
+                <div class="inner_post_img">
+                    <img src="Asset/image-top-laptops.jpg" alt="img">
+                </div>
+                <div class="inner_post_text">
+                    <h2>02</h2>
+                    <h5>Revlving Retro PCs</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, culpa.</p>
+                </div>
+            </div>
+            <div class="post_section col col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12">
+                <div class="inner_post_img">
+                    <img src="Asset/image-gaming-growth.jpg" alt="img">
+                </div>
+                <div class="inner_post_text">
+                    <h2>03</h2>
+                    <h5>Revlving Retro PCs</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, culpa.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Section end -->
+   <!--Body End-->
+    <!--Bootstrap JS Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.nav');
+            sidebar.style.display = 'block';
+            
+        };
+        function cl(){
+            const sidebar = document.querySelector('.nav');
+            sidebar.style.display = 'none';
+        }
+    </script>
+  </body>
+</html>
